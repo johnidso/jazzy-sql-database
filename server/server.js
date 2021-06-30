@@ -2,7 +2,8 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
-const jazzRouter = require('./routes/jazzRouter');
+const artistRouter = require('./routes/artistRouter');
+const songRouter = require('./routes/songRouter');
 
 const app = express();
 const PORT = 5000;
@@ -14,6 +15,6 @@ app.listen(PORT, () => {
     console.log('listening on port', PORT)
 });
 
-app.use('/song', jazzRouter);
-app.use('/artist', jazzRouter);
+app.use('/song', songRouter);
+app.use('/artist', artistRouter);
 
