@@ -1,4 +1,4 @@
-const pool = require('./modules/pool');
+const pool = require('../modules/pool');
 const express = require('express');
 const router = express.Router();
 
@@ -31,3 +31,5 @@ router.post('/', (req, res) => {
         res.sendStatus(500);
     });
 });
+
+module.exports = router;

@@ -1,8 +1,7 @@
 // ROUTER
 
-const pool = require('./modules/pool');
+const pool = require('../modules/pool');
 const express = require('express');
-const { query } = require('express');
 const router = express.Router();
 
 // GETs and POSTs
@@ -37,3 +36,4 @@ router.post('/', (req, res) => {
     });
 });
 
+module.exports = router;
